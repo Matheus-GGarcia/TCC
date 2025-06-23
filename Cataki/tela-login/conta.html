@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Usuário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="conta.css">
+  
+</head>
+<body>
+ 
+    <main class="container">
+        <section class="inicio">
+            <a href="#"><img src="#" alt=""></a>
+            <h1>Seja Bem Vindo!</h1>
+            <h2>Cadastrar Usuário</h2>
+        </section>
+        <section class="forms">
+            <form id="registerForm">
+                <h2>Cadastro</h2>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required />
+
+                <button type="submit" class="btn">Criar Conta</button>
+            </form>
+            <div id="message"></div>
+            <div class="link">
+                Já tem cadastro? <a class="conta" href="login.html">Faça login aqui</a>
+            </div>
+        </section>
+    </main>
+
+ <script src="conta.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+ @charset "UTF-8";
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(60deg, rgba(84, 47, 204, 1) 29%, rgba(152, 48, 156, 1) 72%);
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            height: 90vh;
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255 255 255 / 0.1);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+            margin-top: 50px;
+        }
+
+        .inicio {
+            flex: 1;
+            background: linear-gradient(90deg, rgba(87, 98, 199, 1) 29%, rgba(193, 85, 195, 1) 68%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 48px 64px;
+            gap: 24px;
+        }
+
+        .forms {
+            flex: 1;
+            background: #fafafa;
+            color: #333;
+            padding: 48px 64px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.2rem;
+            font-weight: 900;
+            line-height: 1.1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background: #007bff;
+            color: white;
+        }
+
+        button {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #c82333;
+        }
+
+        .logout {
+            margin-top: 16px;
+            background: #6c757d;
+            width: 100%;
+            border: none;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .logout:hover {
+            background: #5a6268;
+        }
