@@ -5,3 +5,13 @@ document.getElementById('search-button').addEventListener('click', function() {
         window.location.href = 'sua_URL_de_pesquisa?q=' + encodeURIComponent(query);
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (sessionStorage.getItem("userLoggedIn") === "true") {
+    const loginIcon = document.getElementById("login-success");
+    if (loginIcon) {
+      loginIcon.classList.remove("hidden");
+    }
+  }
+});
+

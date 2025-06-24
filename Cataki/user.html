@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="usuario/user.css">
+</head>
+<body>
+     <div id="login-success" class="login-success hidden">
+    <img src="assets/sucesso.svg" alt="Login realizado com sucesso" />
+</div>
+
+    <header class="header">
+        <div class="logo">C</div>
+        <div class="description">CATAKI+LONGA | ENCONTRE QUEM FAZ A DIFERENÇA?</div>
+        <div class="language-switcher">
+            <span>PT</span> <span>&darr;</span>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="cont.html">Contato</a></li>
+            <li><a href="tela-login/conta.html">Login</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="search-box" placeholder="Buscar...">
+            <button id="search-button">🔍
+            </button>
+        </div>
+    </nav>
+   <section class="bread fade-in">
+        <nav class="breadcrumb">
+            <a href="home.html">Home /</a><strong>Sobre</strong>
+        </nav>
+    </section>
+
+ 
+
+  <main class="perfil-container">
+    <aside class="perfil-sidebar">
+      <h3>Editar Minha Conta</h3>
+      <a class="active" href="#">Meu Perfil</a>
+    </aside>
+
+   
+
+    <section class="perfil-form">
+      <p id="mensagemUsuario" class="fade-in mensagem-usuario"></p>
+      <h2 class="form-title">Edite Seu Perfil</h2>
+      <form id="formPerfil">
+        <div class="grid">
+          <div class="form-group">
+            <label>Nome</label>
+            <input type="text" id="nome" value="" />
+          </div>
+          <div class="form-group">
+            <label>Sobrenome</label>
+            <input type="text" id="sobrenome" value="" />
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="email" value="" />
+          </div>
+        </div>
+
+        <h3 class="form-subtitle">Mudar senha</h3>
+        <input type="password" id="senhaAtual" placeholder="Senha Atual" />
+        <input type="password" id="novaSenha" placeholder="Nova Senha" />
+        <input type="password" id="confirmarSenha" placeholder="Confirmar Nova Senha" />
+
+        <div class="form-actions">
+          <button type="button" class="cancel" onclick="location.reload()">Cancelar</button>
+          <button type="submit" class="save">Salvar Mudanças</button>
+        </div>
+      </form>
+
+      <div class="logout-container">
+    <button id="logoutBtn" class="save logout-btn">Sair da Conta</button>
+  </div>
+
+    </section>
+  </main>
+
+
+  <script src="usuario/user.js"></script>
+</body>
+</html>

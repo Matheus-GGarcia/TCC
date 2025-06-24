@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="Contato/cont.css">
+</head>
+<body>
+  <a href="user.html" id="login-success" class="login-success hidden" title="Acessar perfil do usuário">
+  <img src="assets/sucesso.svg" alt="Login realizado com sucesso">
+</a>
+    <header class="header">
+        <div class="logo">C</div>
+        <div class="description">CATAKI+LONGA | ENCONTRE QUEM FAZ A DIFERENÇA?</div>
+        <div class="language-switcher">
+            <span>PT</span> <span>&darr;</span>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Contato</a></li>
+            <li><a href="sobre/sobre.html">Sobre</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="tela-login/conta.html">Login</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="search-box" placeholder="Buscar...">
+            <button id="search-button">🔍
+            </button>
+        </div>
+    </nav>
+<section class="bread fade-in">
+        <nav class="breadcrumb">
+            <a href="home.html">Home /</a><strong>Contato</strong>
+        </nav>
+    </section>
+
+      <div class="container">
+    
+    <!-- COLUNA ESQUERDA COM INFORMAÇÕES -->
+    <div class="info-area">
+      <div class="info-box">
+        <h2>Fale com a gente!</h2>
+        <p>
+          Junte-se a nós nessa jornada!<br>
+          Podemos alcançar impactos poderosos e duradouros.<br>
+          Faça parte dessa mudança conosco
+        </p>
+      </div>
+
+      <div class="contact-links">
+        <div>Para parcerias: <a href="mailto:parcerias@pimpmycarroca.com">parcerias@pimpmycarroca.com</a></div>
+        <div>Para questões de imprensa: <a href="mailto:imprensa@pimpmycarroca.com">imprensa@pimpmycarroca.com</a></div>
+        <div>Dúvidas e comentários: <a href="mailto:cataki@pimpmycarroca.com">cataki@pimpmycarroca.com</a></div>
+      </div>
+    </div>
+
+    <!-- FORMULÁRIO À DIREITA -->
+    <form class="form-container" action="https://formspree.io/f/SEU_CODIGO_AQUI" method="POST">
+      <div class="form-group">
+        <input type="text" name="nome" placeholder="Seu nome *" required>
+        <input type="email" name="email" placeholder="Seu Email *" required>
+        <input type="tel" name="celular" placeholder="Seu Cel *" required>
+      </div>
+      <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+      <button type="submit" class="send-button">Send Massage</button>
+    </form>
+
+  </div>
+
+   <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Onde estamos</h4>
+                <p>R. Gustavo Wild Ayresgott, 375 – Parque Industrial<br>
+                    Tietana Líbano, São Paulo - SP, 09845-980</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contato</h4>
+                <p>CATADORES@PMT.CARRCAC.COM</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Redes Sociais</h4>
+                <!-- Espaço reservado para ícones se quiser adicionar -->
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <p>© Cataki | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="login.feedback.js"></script>
+</body>
+</html>

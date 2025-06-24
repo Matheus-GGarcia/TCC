@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
-    <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="sobre/sobre.css">
 </head>
 
 <body>
+   <a href="user.html" id="login-success" class="login-success hidden" title="Acessar perfil do usuário">
+  <img src="assets/sucesso.svg" alt="Login realizado com sucesso">
+</a>
     <header class="header">
         <div class="logo">C</div>
         <div class="description">Lorem ipsum dolor sit amet...</div>
@@ -19,9 +22,9 @@
     <nav class="navbar">
         <ul>
             <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Home</a></li>
+            <li><a href="cont.html">Contato</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="">Login</a></li>
         </ul>
         <div class="search-container">
             <input type="text" id="search-box" placeholder="Buscar...">
@@ -32,7 +35,7 @@
 
     <section class="bread fade-in">
         <nav class="breadcrumb">
-            <a href="#">Home /</a><strong>Sobre</strong>
+            <a href="home.html">Home /</a><strong>Sobre</strong>
         </nav>
     </section>
 
@@ -138,7 +141,8 @@
         </div>
     </footer>
 
-    <script src="sobre.js"></script>
+    <script src="sobre/sobre.js"></script>
+    <script src="login.feedback.js"></script>
 </body>
 
 </html>

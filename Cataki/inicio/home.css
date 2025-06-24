@@ -14,6 +14,45 @@ body {
     background-color: #f5f5f5;
 }
 
+#login-success {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  padding: 12px 18px;
+  border-radius: 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 9999;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+#login-success img {
+  width: 28px;
+  height: 28px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(76, 175, 80, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
+}
 .header {
     background-color:#4B0082;
     color: white;
