@@ -62,8 +62,10 @@ body {
     padding: 10px 20px;
 }
 
-.logo {
-    font-size: 24px;
+.logo img {
+   width: auto;
+   height: 55px;
+   
 }
 
 .description {
@@ -313,8 +315,9 @@ body {
 }
 
 .img {
-    width: auto;
-    height: auto;
+    width: 530px;
+    height: 330px;
+    border-radius: 20px;
     object-fit: cover; /* Mantém a proporção do vídeo */
 }
 

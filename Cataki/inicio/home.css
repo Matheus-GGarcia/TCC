@@ -62,8 +62,10 @@ body {
     padding: 10px 20px;
 }
 
-.logo {
-    font-size: 24px;
+.logo img {
+   width: auto;
+   height: 55px;
+   
 }
 
 .description {
