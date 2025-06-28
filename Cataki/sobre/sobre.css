@@ -404,11 +404,129 @@ body {
   cursor: pointer;
 }
 
+.container2 {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+/* ANIMAÇÃO: Fade-in-up */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.9s ease-out;
+}
+
+.fade-in-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ANIMAÇÃO: Pulse no hover */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+.icon-svg {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.icon-svg:hover {
+  animation: pulse 0.6s ease;
+  cursor: pointer;
+}
+
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid green;
+  padding-bottom: 10px;
+}
+
+.topo h1 {
+  font-size: 32px;
+}
+
+.descricao {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.icones-metricas {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.icones-metricas div {
+  max-width: 150px;
+}
+
+.icones-metricas img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.conteudo {
+  display: flex;
+  margin-top: 50px;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 65px;
+}
+
+.imagem-projeto img {
+  width: 100%;
+  max-width: 500px;
+  border: 6px solid #76d87c;
+  border-radius: 15px;
+}
+
+.ods {
+  flex-grow: 1;
+}
+
+.ods h2 {
+  border-bottom: 3px solid green;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.ods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 15px;
+}
+
+.ods-grid img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.ods-grid img:hover {
+  animation: pulse 0.6s ease;
+  cursor: pointer;
+}
+
+
 footer {
   background-color: #4B0082;
   color: #f1f1f1;
   font-family: 'Inter', sans-serif;
   padding: 50px 20px 20px;
+  margin-top: 30px;
 }
 
 .footer-container {
@@ -453,3 +571,4 @@ footer {
   font-size: 13px;
   color: #cccccc;
 }
+

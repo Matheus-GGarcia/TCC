@@ -19,3 +19,5 @@ const navbar = document.querySelector('.navbar');
       navbar.classList.remove('visible');
     }
   });
+
+  

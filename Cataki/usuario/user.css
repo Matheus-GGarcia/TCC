@@ -30,10 +30,11 @@ body {
   animation: pulse 1.5s infinite ease-in-out;
 }
 
-.login-success img {
+#login-success img {
   width: 28px;
   height: 28px;
 }
+
 
 .hidden {
   display: none;
